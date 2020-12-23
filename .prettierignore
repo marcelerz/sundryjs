@@ -1,0 +1,6 @@
+dist
+coverage
+.vscode
+package-lock.json
+node_modules
+__snapshots__
