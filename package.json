@@ -44,7 +44,7 @@
 		"test:coverage": "NODE_ENV=test jest --coverage --ci && open ./coverage/index.html",
 		"test:ci": "NODE_ENV=test jest --coverage --ci --passWithNoTests",
 		"prettier": "prettier --write **/*.{ts,js,md}",
-		"ci": "npm run ts && npm run lint && npm run test:ci && npm run prebuildpackage",
+		"ci": "npm run ts && npm run lint && npm run test:ci && npm run buildpackage",
 		"clean": "rm -rf dist coverage",
 		"clean:all": "npm run clean && rm -rf node_modules",
 		"buildpackage": "npm run clean && npm run compile && node system/SetupPackage.js",

@@ -13,7 +13,9 @@ module.exports = {
 		"/dist/",
 		"/coverage/",
 		"/.vscode/",
+		"/.github/",
 		"/node_modules/",
+		"/system/",
 	],
 	coverageThreshold: {
 		global: {
