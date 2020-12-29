@@ -16,7 +16,7 @@
  * @format
  */
 
-import invariant from "assert/invariant";
+import invariant from "../assert/invariant";
 
 /**
  * Valid values as types in object pattern

@@ -4,7 +4,7 @@
  * @format
  */
 
-import invariant from "assert/invariant";
+import invariant from "../assert/invariant";
 
 const lastX = <T>(items: T[], msg?: string): T => {
 	invariant(
