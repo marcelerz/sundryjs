@@ -1,14 +1,13 @@
 /**
- * Util function to check if a value is non-null (or undefined).
+ * Util function to return the non-null (and non-undefined) type to keep
+ * everything strictly typed.
+ * Use template string to give more context on what went wrong.
  *
- * This helps in code when we receive a nullable value (e.g. ?string),
- * then we can call nullThrows() on it and it will return a non-null type,
- * satisfying typescript and making sure we keep everything strictly typed.
- * Be careful since this will throw an exception. So, only call this if you are
- * really sure that the value should be non-null.
+ * Usage:
  *
- * Supply the msg value to describe what should have been expected to be
- * non-null.
+ * const value = someFunction(); // Returns number | null | undefined
+ * const numberValue = nullthrows(value, "Value is null.");
+ * // numberValue is now of type "number"
  *
  * @format
  */

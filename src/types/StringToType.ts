@@ -3,6 +3,15 @@
  *
  * Converts a "string" literal into the string type, and many others.
  *
+ *
+ * The following types are supported:
+ * - "string" -> string
+ * - "number" -> number
+ * - "boolean" -> boolean
+ * - "undefined" -> undefined
+ * - "function" -> Function
+ * - "object" -> Record<string, any>
+ *
  * @format
  */
 /* eslint-disable @typescript-eslint/ban-types */

@@ -1,5 +1,5 @@
 /**
- * Snake-case a string.
+ * Converts a string to snake-case.
  *
  * Examples:
  *   foo-bar -> foo_bar

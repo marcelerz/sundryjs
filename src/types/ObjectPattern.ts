@@ -1,16 +1,23 @@
 /**
- * Converts and object with string keys for types into a real object type.
+ * Converts an object with string keys to a typed object.
  *
- * Note: Make sure to mark object as "<const>".
+ * Note: Make sure to mark the object as `<const>` as this is required.
  *
- * Example:
- *   const payload = <const>{
+ *
+ * Usage:
+ *
+ * const payload = <const>{
  *     id: "number",
  *     username: "string",
- *   };
- *   type Payload = ObjectPattern<typeof payload>;
+ * };
+ * type Payload = ObjectPattern<typeof payload>;
+ * // Payload is of type
+ * // {
+ * //   id: number,
+ * //   username: string,
+ * // }
  *
- *  @format
+ * @format
  */
 
 import type { StringToType } from "./StringToType";

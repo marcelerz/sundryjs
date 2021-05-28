@@ -1,5 +1,11 @@
 /**
- * Returns the first entry and will fail if not available.
+ * Returns the first entry and will fail if there are none or more than one
+ * entry available.
+ *
+ * Usage:
+ *
+ * const list = someFunction(); // Will return a list, but it is expected to be one entry
+ * const entry = onlyX(list); // Fails when there is no or more than one entry
  *
  * @format
  */

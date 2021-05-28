@@ -1,6 +1,16 @@
 /**
  * Returns the first entry and will fail if not available.
  *
+ * Note: The index starts at zero.
+ *
+ * If `msg` is not given, a useful message will be returned.
+ *
+ * Should the xth entry be `undefined`, then it _will_ trigger an error.
+ *
+ * Usage:
+ *
+ * const fifthEntry = nthX(list, 4); // Fails when there is no 5th entry
+ *
  * @format
  */
 

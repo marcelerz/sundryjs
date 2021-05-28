@@ -1,6 +1,10 @@
 /**
  * Returns the first entry and will fail if not available.
  *
+ * Usage:
+ *
+ * const lastEntry = lastX(list); // Fails when list is empty
+ *
  * @format
  */
 

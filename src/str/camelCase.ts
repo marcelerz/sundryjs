@@ -1,5 +1,5 @@
 /**
- * Camel-case a string.
+ * Converts a string to camel-case.
  *
  * Examples:
  *   foo-bar -> fooBar

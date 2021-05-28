@@ -1,14 +1,13 @@
 /**
- * Util function to check if a value is non-undefined.
+ * Util function to return the non-undefined (only) type to keep everything
+ * strictly typed.
+ * Use template string to give more context on what went wrong.
  *
- * This helps in code when we receive an undefined value (e.g. key?: string),
- * then we can call undefinedThrows() on it and it will return a non-undefined
- * type, satisfying typescript and making sure we keep everything strictly
- * typed. Be careful since this will throw an exception. So, only call this if
- * you are really sure that the value should be non-undefined.
+ * Usage:
  *
- * Supply the msg value to describe what should have been expected to be
- * non-undefined.
+ * const value = someFunction(); // Returns number | undefined
+ * const numberValue = nullthrows(value, "Value is undefined.");
+ * // numberValue is now of type "number"
  *
  * @format
  */

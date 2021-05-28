@@ -1,5 +1,5 @@
 /**
- * Kebab-case a string.
+ * Converts a string to kebab-case.
  *
  * Examples:
  *   foo-bar -> foo-bar

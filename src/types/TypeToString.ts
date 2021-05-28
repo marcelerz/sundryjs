@@ -3,6 +3,20 @@
  *
  * Converts a "string" literal into the string type, and many others.
  *
+ *
+ * The following types are supported:
+ * - string -> "string"
+ * - number -> "number"
+ * - boolean -> "boolean"
+ * - undefined -> "undefined"
+ * - Function -> "function"
+ * - Record<string, any> -> { [K in keyof T]: TypeToString<T[K]> }
+ * - T -> any
+ * - null -> "null"
+ *
+ * Note: This type uses a recursive call and an object will be broken down into
+ * individual strings.
+ *
  * @format
  */
 /* eslint-disable @typescript-eslint/ban-types */

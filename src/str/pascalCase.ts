@@ -1,5 +1,5 @@
 /**
- * Pascal-case a string.
+ * Converts a string to pascal-case.
  *
  * Examples:
  *   foo-bar -> FooBar

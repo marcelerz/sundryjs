@@ -6,6 +6,12 @@
  * The invariant message will be stripped in production, but the invariant will
  * remain to ensure logic does not differ in production.
  *
+ * Usage:
+ *
+ * const value = someFunction(); // Might be any type
+ * invariant(typeof value === "string", "Value is not a string.");
+ * // Can be sure it is a string now
+ *
  * @format
  */
 function invariant(condition: unknown, msg?: string): asserts condition {

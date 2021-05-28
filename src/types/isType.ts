@@ -1,8 +1,10 @@
 /**
- * Type guard for runtime.
+ * Type guard for runtime. It converts an input type to an output type according
+ * to some condition defined.
  *
  * Usage:
- *   const value = isType(<SomeType>, <Runtime check>);
+ *
+ * const value = isType(inputValue, typeof inputValue = "string");
  *
  * @format
  */

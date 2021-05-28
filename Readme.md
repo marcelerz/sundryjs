@@ -130,7 +130,7 @@ The `remove` method removes the subscription from the event emitter.
 
 ### `assert/assertNever`
 
-A funtion that fails for all calls.
+A function that fails for all calls.
 
 This is used for exhausive checking switches and similar use-cases.
 

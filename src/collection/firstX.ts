@@ -1,5 +1,9 @@
 /**
- * Returns the first entry and will fail if not available.
+ * Returns the first entry and will fail if none available.
+ *
+ * Usage:
+ *
+ * const firstEntry = firstX(list); // Fails when list is empty
  *
  * @format
  */
