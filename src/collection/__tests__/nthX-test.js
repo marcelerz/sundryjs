@@ -29,7 +29,7 @@ describe("nthX", () => {
 		expect(() => {
 			nthX([2, 3, 4, 5, 6], -6);
 		}).toThrow(
-			"Invariant Violation: Expected a item at position -6, but only 5 items are in the list.",
+			"Invariant Violation: Expected a item at position -6, but only 5 items are available in the list.",
 		);
 	});
 
@@ -37,7 +37,7 @@ describe("nthX", () => {
 		expect(() => {
 			nthX([], 1);
 		}).toThrow(
-			"Invariant Violation: Expected a item at position 1, but only 0 items are in the list.",
+			"Invariant Violation: Expected a item at position 1, but only 0 items are available in the list.",
 		);
 	});
 
@@ -45,7 +45,7 @@ describe("nthX", () => {
 		expect(() => {
 			nthX([2, 4], 5);
 		}).toThrow(
-			"Invariant Violation: Expected a item at position 5, but only 2 items are in the list.",
+			"Invariant Violation: Expected a item at position 5, but only 2 items are available in the list.",
 		);
 	});
 

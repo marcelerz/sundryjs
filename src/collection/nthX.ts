@@ -10,7 +10,7 @@ const nthX = <T>(items: T[], idx: number, msg?: string): T => {
 	invariant(
 		items.length > (idx >= 0 ? idx : Math.abs(idx) - 1),
 		msg ||
-			`Expected a item at position ${idx}, but only ${items.length} items are in the list.`,
+			`Expected a item at position ${idx}, but only ${items.length} items are available in the list.`,
 	);
 	const actualIdx = idx >= 0 ? idx : items.length + idx;
 	const result = items[actualIdx];
